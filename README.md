@@ -11,13 +11,13 @@ In the iterators lab we will be continuing our exploration of iterators and buil
 
 Research the following term and summarize your findings on it two to three sentences:
 
-* `higher-order function`: A higher order function is a function that operates on other functions, either by taking them in as arguments or by returning them. Higher order functions allow us to abstract over actions in our code, making those actions easier to interpret at a higher level and less prone to error.
+* `higher-order function`: A higher order function is a function that operates on other functions, either by taking them in as arguments or by returning them. Higher order functions allow us to abstract over actions in our code, making those actions easier to interpret at a higher level and less prone to error. **They allow us to say what we 'mean' to do instead of all the details of actually do it.**
 
 
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
 
-* `max`: returns the max number in an array of numbers
+* `max`: In JS, the Math.max() function outputs the largest number provided in the arguments. If no arguments are provided, it will output -Infinity to be used to compare with future declarations. It will output NaN if compared with other types.
 
 ```
 example:
@@ -29,7 +29,7 @@ Math.max(10, 5, 100, 2, 1000);
 
 ```
 
-* `min`: returns the min number in an array of numbers
+* `min`: In JS, the Math.min() function outputs the smallest number provided in the arguments. If no arguments are provided, it will output Infinity to be used to compare with future declarations. It will output NaN if compared with other types.
 
 ```
 example:
@@ -160,3 +160,4 @@ var sqrRoot = function(num) {
 
 var sqrNumbers = map(myNumbers, square);
 var absNumbers = map(sqrNumbers, sqrRoot);
+```
