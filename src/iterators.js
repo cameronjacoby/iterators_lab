@@ -102,16 +102,6 @@ var reject = function(list, action) {
 module.exports.reject = reject;
 
 
-////////// phase 4: refactor using map
-
-var myNumbers = [-1, 2, -3, 4, -5, 6];
-
-var findAbs = function(num) {
-  return Math.sqrt(num * num);
-}
-
-var absNumbers = map(myNumbers, findAbs);
-
 
 
 

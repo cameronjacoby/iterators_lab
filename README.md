@@ -11,7 +11,7 @@ In the iterators lab we will be continuing our exploration of iterators and buil
 
 Research the following term and summarize your findings on it two to three sentences:
 
-* `higher-order function`: A higher order function is a function that operates on other functions, either by taking them in as arguments or by returning them. Higher order functions allow us to abstract over actions in our code, making those actions easier to interpret at a higher level and less prone to error. **They allow us to say what we 'mean' to do instead of all the details of actually do it.**
+* `higher-order function`: A higher order function is a function that operates on other functions, either by taking them in as arguments or by returning them. Higher order functions allow us to abstract over actions in our code, making those actions easier to interpret at a higher level and less prone to error. **They allow us to say what we 'mean' to do instead of all the details of actually doing it.**
 
 
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
@@ -54,10 +54,10 @@ pets.forEach(function(item, index){
 });
 
 // output
-pets[0]returns dog
-pets[1]returns cat
-pets[2]returns horse
-pets[3]returns rabbit
+pets[0] returns dog
+pets[1] returns cat
+pets[2] returns horse
+pets[3] returns rabbit
 
 ```
 
@@ -160,4 +160,14 @@ var sqrRoot = function(num) {
 
 var sqrNumbers = map(myNumbers, square);
 var absNumbers = map(sqrNumbers, sqrRoot);
+```
+
+```
+var myNumbers = [-1, 2, -3, 4, -5, 6];
+
+var findAbs = function(num) {
+  return Math.sqrt(num * num);
+}
+
+var absNumbers = map(myNumbers, findAbs);
 ```

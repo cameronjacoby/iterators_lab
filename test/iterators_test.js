@@ -10,15 +10,17 @@ describe('Iterators', function(){
     beforeEach(function(){
       myArr = [66,22,67,34];
     });
+
     it('should return the maximum in an array', function(){
       expect(Iterators.max(myArr)).to.equal(67);
-    })    
+    });
+
     it('should return -Infinity for empty array', function(){
       myArr = [];
       expect(Iterators.max(myArr)).to.equal(-Infinity);
-    })
-  })
-})
+    });
+  });
+});
 
 
 // min test
@@ -55,12 +57,10 @@ describe('Iterators', function(){
       };
     });
 
-    // doesn't pass yet
     it('should return the array', function(){
       expect(Iterators.each(myArr, myFunction)).to.eql([66,22,67,34]);
     });
 
-    // doesn't pass yet
     it('should return an empty array for empty array', function(){
       myArr = [];
       expect(Iterators.each(myArr, myFunction)).to.eql([]);
@@ -82,12 +82,10 @@ describe('Iterators', function(){
       };
     });
 
-    // doesn't pass yet
     it('should return each item in the array divided by 2', function(){
       expect(Iterators.map(myArr, myFunction)).to.eql([33,11,33.5,17]);
     });
 
-    // doesn't pass yet
     it('should return an empty array for empty array', function(){
       myArr = [];
       expect(Iterators.map(myArr, myFunction)).to.eql([]);
@@ -109,12 +107,10 @@ describe('Iterators', function(){
       };
     });
 
-    // doesn't pass yet
     it('should return filtered list containing numbers greater than 65', function(){
       expect(Iterators.filter(myArr, myFunction)).to.eql([66,67]);
     });
 
-    // doesn't pass yet
     it('should return an empty array for empty array', function(){
       myArr = [];
       expect(Iterators.filter(myArr, myFunction)).to.eql([]);
@@ -157,22 +153,16 @@ describe('Iterators', function(){
       };
     });
 
-    // doesn't pass yet
     it('should return filtered list containing numbers NOT greater than 65', function(){
       expect(Iterators.reject(myArr, myFunction)).to.eql([22,34]);
     });
 
-    // doesn't pass yet
     it('should return an empty array for empty array', function(){
       myArr = [];
       expect(Iterators.reject(myArr, myFunction)).to.eql([]);
     });
   });
 });
-
-
-
-
 
 
 
